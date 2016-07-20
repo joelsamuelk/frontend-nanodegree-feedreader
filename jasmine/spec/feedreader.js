@@ -113,7 +113,7 @@ $(function() {
          * loadFeed function that the content actually changes.
          * Note: loadFeed() is asynchronous.
          */
-        it('The content has changed when a new feed loads', function(){
+        it('content has changed when a new feed loads', function(){
             expect(feed1).not.toBe(feed2);
         });
     });
