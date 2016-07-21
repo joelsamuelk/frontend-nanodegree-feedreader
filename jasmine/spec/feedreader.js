@@ -31,7 +31,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('The URLs are defined', function () {
+        it('URLs are defined', function () {
 
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].url).toBeDefined();
@@ -58,7 +58,7 @@ $(function() {
         /* This test ensures the menu element is hidden by
          * default. It uses the menu-hidden class.
          */
-        it('The Menu is hidden', function() {
+        it('is hidden', function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
@@ -67,7 +67,7 @@ $(function() {
           * has two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
-        it('The Menu changes visibility on click', function() {
+        it('changes visibility on click', function() {
            $('.menu-icon-link').trigger('click');
            expect($('body').hasClass('menu-hidden')).toBe(false);
            $('.menu-icon-link').trigger('click');
