@@ -85,7 +85,7 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-        it('feedreader has a single entry in the feed ', function() {
+        it('The initial Entries feedreader has a single entry in the feed ', function() {
             expect($('.feed .entry').length).not.toBe(0);
         });
     });
