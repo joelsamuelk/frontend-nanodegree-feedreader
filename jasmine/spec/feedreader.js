@@ -38,7 +38,7 @@ $(function() {
          * and that the name is not empty.
          */
 
-        it('Names defined', function() {
+        it('All RSS Feed have names defined', function() {
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].name).toBeDefined();
                 expect(allFeeds[i].name.length).not.toBe(0);
@@ -85,7 +85,7 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-        it('The Feedreader has a single entry in the feed or more', function() {
+        it('feedreader has a single entry or more in the feed ', function() {
             expect($('.feed .entry').length).not.toBe(0);
         });
     });

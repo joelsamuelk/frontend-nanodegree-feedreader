@@ -11,10 +11,12 @@ Run the index.html file found in the main directory
 
 ## Feedreader Details 
 - The Jasmine spec results will be displayed at the bottom of the page.
+
 - Every test writen passes and the is enough to understand and follow. 
 
 
 ## Feedreader Test Written 
+
     1. Test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty.
 
     2. Test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty. 
