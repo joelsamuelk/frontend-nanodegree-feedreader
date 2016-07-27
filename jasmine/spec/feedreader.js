@@ -15,7 +15,7 @@ $(function() {
      */
     describe('RSS Feeds', function() {
 
-        it('are defined', function() {
+        it('RSS Feeds are all defined', function() {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(0);
         });
@@ -25,7 +25,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('URL defined', function() {
+        it('All RSS Feeds have URL defined', function() {
 
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].url).toBeDefined();
@@ -54,7 +54,7 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
-        it('has been hidden', function() {
+        it('The Menu has been hidden', function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
@@ -85,7 +85,7 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-        it('has a single entry in the feed', function() {
+        it('The Feedreader has a single entry in the feed or more', function() {
             expect($('.feed .entry').length).not.toBe(0);
         });
     });
@@ -108,7 +108,7 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-        it('content has changed when a new feed loads', function() {
+        it('When the new feed selection happens, the content has changed when a new feed loads', function() {
             expect(feedOption1).not.toBe(feedOption2);
         });
     });
